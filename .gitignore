@@ -13,8 +13,8 @@ foo.*
 data
 
 # Config files that represent local settings
-.confgi/nvim/lazyvim.json
-.confgi/nvim/lazy-lock.json
+.config/nvim/lazyvim.json
+.config/nvim/lazy-lock.json
 
 .config/fish
 .config/go

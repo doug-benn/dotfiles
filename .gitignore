@@ -21,3 +21,23 @@ data
 
 tmux/plugins/
 fzf
+.vscode
+
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# Config files that represent local settings
+/lazyvim.json
+/lazy-lock.json
+
+.config/fish
+.config/go
+
+tmux/plugins/
+fzf

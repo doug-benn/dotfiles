@@ -5,3 +5,4 @@ vim.opt.mouse = ""
 vim.opt.mousescroll = "ver:0,hor:0"
 vim.opt.scrolloff = 8 -- Lines of context
 vim.opt.cmdheight = 1
+vim.opt.relativenumber = false

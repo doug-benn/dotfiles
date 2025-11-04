@@ -1,10 +1,10 @@
 return { -- Main Menu
-{
+  {
     "snacks.nvim",
     opts = {
-        dashboard = {
-            preset = {
-                header = [[
+      dashboard = {
+        preset = {
+          header = [[
                       .:--=+****##****+==-:.                                              
               .-=+*##%@@@@@@@@@@@%%%%####%@@@%#*=-.                                       
            -*%@@@@@@@@@%%%%%%%%%%%%%%@@@%%%%%%%@@@@@#+-.                                  
@@ -40,19 +40,32 @@ return { -- Main Menu
                             -+#@@@@@@@@@@@@@@@@@@@@@@@@%%%%%%%@%@@@%%%%#####*##*-         
                                 :=*%@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%%######***+-           
                                     .:=*#@@@@@@@@@@@@@@@@@@%%%%%%########*=-.             
-                                          .-=+*##%%%%%%%%%%%%%%#####*+=:.                   
-]]
-            }
-        }
-    }
-}, {
+                                          .-=+*##%%%%%%%%%%%%%%#####*+=:.                 
+]],
+        },
+      },
+    },
+  },
+  {
     "folke/noice.nvim",
     opts = {
-        cmdline = {
-            view = "cmdline"
+      cmdline = {
+        view = "cmdline",
+      },
+      popupmenu = {
+        enabled = false,
+      },
+    },
+  },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+          visible = true,
         },
-        popupmenu = {
-            enabled = false
-        }
-    }
-}}
+        never_show = { ".git" },
+      },
+    },
+  },
+}

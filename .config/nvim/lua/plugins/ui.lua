@@ -44,6 +44,7 @@ return { -- Main Menu
 ]],
         },
       },
+      explorer = { hidden = true, auto_close = true },
     },
   },
   {

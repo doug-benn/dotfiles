@@ -57,19 +57,4 @@ return { -- Main Menu
       },
     },
   },
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    opts = {
-      close_if_last_window = true,
-      open_on_setup = false,
-      filesystem = {
-        filtered_items = {
-          visible = false,
-          hide_gitignored = true,
-          hide_dotfiles = false,
-          never_show = { ".git" },
-        },
-      },
-    },
-  },
 }

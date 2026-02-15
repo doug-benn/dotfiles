@@ -35,10 +35,10 @@ sudo tar -C /usr/local -xzf "$CACHE_DIR/$TARBALL"
 
 if ! grep -q "/usr/local/go/bin" ~/.bashrc; then
   echo "Adding Go to PATH..."
-  echo 'export PATH=$PATH:/usr/local/go/bin' >>~/.bashrc
+  echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.profile
 fi
 
-source ~/.bashrc
+source $HOME/.profile
 
 echo "Installed version:"
 go version

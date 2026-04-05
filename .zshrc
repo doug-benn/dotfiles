@@ -13,7 +13,7 @@ autoload -U compinit; compinit
 znap source zsh-users/zsh-syntax-highlighting
 znap source zsh-users/zsh-completions
 znap source zsh-users/zsh-autosuggestions
-znap source doug-benn/zsh-fuzzy-history
+#znap source doug-benn/zsh-fuzzy-history
 
 # Environment variables
 export SUDO_EDITOR="$EDITOR"

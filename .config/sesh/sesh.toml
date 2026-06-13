@@ -1,0 +1,21 @@
+#:schema https://github.com/joshmedeski/sesh/raw/main/sesh.schema.json
+
+[default_session]
+startup_command = "nvim -c ':Telescope find_files'"
+preview_command = "eza --all --git --icons --color=always {}"
+
+[[session]]
+name = "Downloads 📥"
+path = "~/Downloads"
+startup_command = "lsa"
+
+# open a file
+[[session]]
+name = "dotfiles config"
+path = "~/dotfiles"
+startup_command = "nvim"
+windows = ["lazygit"]
+
+[[window]]
+name = "lazygit"
+startup_script = "lazygit"

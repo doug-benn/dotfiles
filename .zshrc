@@ -15,11 +15,6 @@ znap source zsh-users/zsh-syntax-highlighting  # real-time command colorisation 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 
-# Accept autosuggestion with → or End
-bindkey '^[[C' autosuggest-accept   # Right arrow
-bindkey '^[OF' autosuggest-accept   # End key
-
-
 # ----- Tools -----
 if [[ -o interactive ]] && [[ ${TERM:-} != "dumb" ]] && command -v starship &> /dev/null; then
   eval "$(starship init zsh)"
@@ -37,7 +32,7 @@ fi
 
 # ----- Settings and Keybinds -----
 # Use emacs-style key bindings (default; change to -v for vi mode)
-bindkey -e
+bindkey -v
 
 # History
 setopt APPEND_HISTORY          # Equivalent to shopt -s histappend
